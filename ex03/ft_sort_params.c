@@ -6,7 +6,7 @@
 /*   By: azaragoz <azaragoz@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/30 17:24:24 by azaragoz          #+#    #+#             */
-/*   Updated: 2025/07/31 12:10:10 by azaragoz         ###   ########.fr       */
+/*   Updated: 2025/07/31 13:28:22 by azaragoz         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,6 @@ void	ft_putstr(char *str)
 		write(1, &str[i], 1);
 		i++;
 	}
-	write(1, "\n", 1);
 }
 
 int	main(int argc, char **argv)
