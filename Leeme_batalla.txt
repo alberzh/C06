@@ -1,0 +1,59 @@
+PROGRAMA: ft_batalla_optimizado.c
+=================================
+
+DESCRIPCIÓN:
+-----------
+Este programa implementa un juego que simula una "batalla Pokémon" donde se imprimen 
+diferentes nombres de Pokémon o números según reglas específicas para los números del 1 al 50.
+
+FUNCIONAMIENTO:
+--------------
+El programa recorre los números del 1 al 50 y para cada número aplica las siguientes reglas:
+
+1. Si el número es múltiplo de 2 y 9: imprime "Bulbasaur"
+2. Si el número es múltiplo de 2: imprime "Charmander" 
+3. Si el número es múltiplo de 9: imprime "Squirtle"
+4. Si no cumple ninguna condición anterior: imprime el número
+
+EJEMPLO DE SALIDA:
+-----------------
+1
+Charmander    (2 es múltiplo de 2)
+3
+Charmander    (4 es múltiplo de 2)
+5
+Charmander    (6 es múltiplo de 2)
+7
+Charmander    (8 es múltiplo de 2)
+Squirtle      (9 es múltiplo de 9)
+Charmander    (10 es múltiplo de 2)
+11
+Charmander    (12 es múltiplo de 2)
+13
+Charmander    (14 es múltiplo de 2)
+15
+Charmander    (16 es múltiplo de 2)
+17
+Bulbasaur     (18 es múltiplo de 2 y 9)
+...
+
+FUNCIONES:
+---------
+1. ft_putnbr(int n): Imprime un número entero seguido de salto de línea
+2. ft_batalla(int d): Función principal que implementa la lógica del juego
+3. main(): Punto de entrada que inicia el juego desde el número 1
+
+OPTIMIZACIONES IMPLEMENTADAS:
+----------------------------
+- Uso de operadores módulo (%) en lugar de contadores separados
+- Función auxiliar ft_putnbr para evitar duplicación de código
+- Lógica simplificada con condiciones if-else encadenadas
+- Incremento de contador una sola vez por iteración
+
+COMPILACIÓN Y EJECUCIÓN:
+-----------------------
+gcc ft_batalla_optimizado.c -o batalla
+./batalla
+
+AUTOR: Alberto y Marcos
+FECHA: Julio 2025
